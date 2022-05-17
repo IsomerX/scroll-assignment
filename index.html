@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section>
+            <div class="parent">
+                <div
+                    class="time"
+                    data-0="background: rgb(74, 74, 74);"
+                    data-150p="background: rgb(140, 201, 220)"
+                >
+                    <img
+                        src="./assets/stars.png"
+                        alt="moon"
+                        class="moon"
+                        data-0="top: 50%; right: 25%"
+                        data-75p="top:-100%; right: 30%"
+                    />
+                    <img
+                        src="./assets/moon.png"
+                        alt="moon"
+                        class="moon"
+                        data-0="top: 50%; right: 15%"
+                        data-75p="top:-100%; right: 20%"
+                    />
+                    <img
+                        src="./assets/sun.png"
+                        alt="sun"
+                        class="sun"
+                        data-0="top: 100%; right: 20%; transform:translateY(50%)"
+                        data-100p="top:50%; right: 15%; transform: translateY(-50%)"
+                    />
+                </div>
+                <div class="planeStuff">
+                    <img
+                        src="./assets/Runway_diagram.svg"
+                        alt=""
+                        class="runway"
+                        data-0="right: 100%"
+                        data-100p="right:-5%"
+                        data-400p="right: -5%"
+                        data-500p="right: -200%"
+                    />
+                    <img
+                        src="./assets/plane-top.png"
+                        alt="plane-top"
+                        class="plane-top"
+                        data-120p="right: 100%"
+                        data-200p="right: 30%"
+                        data-301p="right: 30%"
+                        data-400p="right: -50%"
+                    />
+                    <img
+                        src="./assets/deadpool.png"
+                        alt="deadpool"
+                        class="deadpool"
+                        data-200p="opacity: 0; top: 100%; "
+                        data-300p="opacity:1; top: 50%"
+                        data-301p="opacity: 0"
+                    />
+                </div>
+            </div>
+            <!-- <div class="parent2">
+
+            </div> -->
+        </section>
+
+        <script type="text/javascript" src="skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
+    </body>
+</html>
