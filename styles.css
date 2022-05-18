@@ -73,7 +73,7 @@ section {
     width: 100%;
     background-color: orange;
     top: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     position: fixed;
 }
 
@@ -84,11 +84,99 @@ section {
     position: absolute;
 }
 
-.parent3 {
+.sky{
+    height: 120%;
+    width: 100%;
+    animation: sky-anim 3s ease-in-out infinite;
+    position: absolute;
+    top: -5%;
+}
+
+@keyframes sky-anim {
+    50%{
+        top: 0%;
+    }
+    100%{
+        top: -5%;
+    }
+}
+
+.parent3, .parent4 {
     height: 100vh;
     width: 100%;
     background-color: red;
     top: 100vh;
     overflow-x: hidden;
     position: fixed;
+}
+
+.parent3 img{
+    position: absolute;
+}
+
+.fire-left{
+    left: 40%;
+    transform: translateX(-50%) scale(0.7);
+}
+
+.fire-mid{
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.fire-right{
+    left: 60%;
+    transform: translateX(-50%) scale(0.7);
+}
+
+.fire-text{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-family: monospace;
+    font-size: 10em;
+}
+
+.parent4{
+    background: yellow;
+    font-size: 5em;
+    font-family: monospace;
+    position: fixed;
+    overflow: hidden;
+}
+
+.text1, .text2{
+    width: 450px;
+    position: absolute;
+}
+
+.text1{
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text2{
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.parent5{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.parent5 img{
+    height: 500px;
 }
